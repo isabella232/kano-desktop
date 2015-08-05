@@ -85,6 +85,14 @@ case $icon_name in
     if [ "$avatar_file" != "" ]; then
         printf "IconStamp: {13,13} $avatar_file\n"
     fi
+
+    #######################################################
+    # Add fake notification icon
+
+    notification_icon="/usr/share/kano-desktop/images/world-numbers/1.png"
+    printf "IconStatus: {190,53} $notification_icon\n"
+
+    ########################################################
     ;;
 
 
